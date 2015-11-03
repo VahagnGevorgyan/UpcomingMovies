@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:upmovies="http://schemas.android.com/apk/lib/com.up.upmovies"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_content"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.up.upmovies.ui.utils.DynamicHeightImageView
+                android:id="@+id/imageViewThumb"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layoutTitleYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.up.upmovies.ui.utils.CustomTextView
+                        android:id="@+id/textViewTitleYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        upmovies:font="fonts/RobotoRegular.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutRatings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal" >
+
+                    <com.up.upmovies.ui.utils.CustomTextView
+                        android:id="@+id/textViewRatingsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/str_ratings"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        upmovies:font="fonts/RobotoMedium.ttf" />
+
+                    <com.up.upmovies.ui.utils.DynamicHeightTextView
+                        android:id="@+id/textViewRatings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        upmovies:font="fonts/RobotoLight.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutCharacters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal" >
+
+                    <com.up.upmovies.ui.utils.CustomTextView
+                        android:id="@+id/textViewCharactersTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/str_characters"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        upmovies:font="fonts/RobotoMedium.ttf" />
+
+                    <com.up.upmovies.ui.utils.DynamicHeightTextView
+                        android:id="@+id/textViewCharacters"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLines="3"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        upmovies:font="fonts/RobotoLight.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSynopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <com.up.upmovies.ui.utils.CustomTextView
+                android:id="@+id/textViewSynopsisTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/str_synopsis"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                upmovies:font="fonts/RobotoMedium.ttf" />
+
+            <com.up.upmovies.ui.utils.CustomTextView
+                android:id="@+id/textViewSynopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="7"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                upmovies:font="fonts/RobotoLight.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

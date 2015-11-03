@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Upcoming Movies</string>
+    <string name="image_launch">launch image</string>
+    
+    <string name="check_internet_connection">Please check your Internet connection</string>
+    <string name="str_ratings">Ratings:  </string>
+    <string name="str_characters">Characters:  </string>
+    <string name="str_synopsis">Synopsis:  </string>
+    
+    
+</resources>

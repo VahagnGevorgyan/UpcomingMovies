@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- The default theme. -->
+    <style name="Theme" parent="android:style/Theme" />
+    
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    </style>
+    
+    <!-- Base Theme.UpMovies theme -->
+    <style name="Theme.UpMovies" parent="AppBaseTheme">
+        <!-- <item name="android:windowNoTitle">true</item> -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="Theme.UpMovies.NoTitle" parent="Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

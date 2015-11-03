@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.up.upmovies"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+    
+    <uses-permission android:name="android.permission.INTERNET"
+        			 android:required="false"	
+        				/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+   	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+         android:name=".UpApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <!-- Service -->
+        <service android:name=".service.UpIntentService" />
+        
+        <activity
+            android:name="com.up.upmovies.ui.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.UpMovies"
+            >
+        </activity>
+        
+        <activity
+            android:name="com.up.upmovies.ui.SplashActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:keepScreenOn="true"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UpMovies.NoTitle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+    </application>
+
+</manifest>
